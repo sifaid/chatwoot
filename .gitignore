@@ -67,3 +67,5 @@ test/cypress/videos/*
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+/config/master.key
