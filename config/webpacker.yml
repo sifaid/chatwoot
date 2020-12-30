@@ -94,7 +94,7 @@ staging:
 
   # Cache manifest.json for performance
   cache_manifest: true
-  public_output_path: packs-staging
+  # public_output_path: packs-staging
   
 production:
   <<: *default
