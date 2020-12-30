@@ -13,7 +13,7 @@ require "capistrano/rails/db"
 require "capistrano/linked_files"
 # require "capistrano/delayed_job"
 # require "capistrano/rake"
-# require "capistrano/yarn"
+require "capistrano/yarn"
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
