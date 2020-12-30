@@ -41,7 +41,6 @@ namespace :deploy do
       puts "======= release path is #{deploy_to} =========="
       puts "======= ruby version is #{fetch(:rvm_ruby_version)} =========="
       execute("cd #{deploy_to}/current/ && ~/.rvm/bin/rvm #{fetch(:rvm_ruby_version)} do bundle exec puma -C #{deploy_to}/shared/puma.rb --daemon")
-      execute("cd #{deploy_to}/current/ && ~/.rvm/bin/rvm #{fetch(:rvm_ruby_version)} do bundle exec pumactl -S #{deploy_to}/shared/tmp/pids/puma.state -F #{deploy_to}/shared/puma.rb stop")
     end
   end
 
