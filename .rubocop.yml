@@ -31,6 +31,7 @@ Layout/LineLength:
   Exclude:
     - 'config/deploy/*'
     - 'config/deploy.rb'
+    - 'config/environments/*'
 Rails/Output:
   Exclude:
     - 'config/deploy/*'
@@ -62,10 +63,16 @@ Metrics/BlockLength:
     - db/schema.rb
     - 'config/deploy/*'
     - 'config/deploy.rb'
+Style/RegexpLiteral:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+    - 'config/environments/*'
 Style/StringLiterals:
   Exclude:
     - 'config/deploy/*'
     - 'config/deploy.rb'
+    - 'config/environments/*'
 Style/EmptyLinesAroundBlockBody:
   Exclude:
     - 'config/deploy/*'
