@@ -23,6 +23,14 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Style/SymbolArray:
   Enabled: false
+Layout/EmptyLines:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+Layout/LineLength:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Rails/Output:
   Exclude:
     - 'config/deploy/*'

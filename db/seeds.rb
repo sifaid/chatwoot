@@ -8,7 +8,7 @@ account = Account.create!(
   support_email: ENV.fetch('MAILER_SENDER_EMAIL', 'accounts@sifa.id')
 )
 
-user = User.new(name: 'John', email: 'help@sifa.id', password: '123456')
+user = User.new(name: 'Sifa Help', email: 'help@sifa.id', password: '123456')
 user.skip_confirmation!
 user.save!
 

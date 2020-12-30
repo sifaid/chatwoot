@@ -146,7 +146,7 @@ group :development, :test do
   gem 'capistrano-rails',         require: false
   gem 'capistrano-rake',          require: false
   gem 'capistrano-bundler',       require: false
-  gem 'capistrano3-puma',         require: false
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
   gem 'capistrano-rails-console', require: false
   gem 'capistrano-rails-db'
   # gem 'capistrano3-delayed-job', '~> 1.0'
