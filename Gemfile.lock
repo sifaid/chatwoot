@@ -129,6 +129,7 @@ GEM
       multi_json (~> 1)
       statsd-ruby (~> 1.1)
     bcrypt (3.1.15)
+    bcrypt_pbkdf (1.0.1)
     bindex (0.8.1)
     bootsnap (1.4.8)
       msgpack (~> 1.0)
@@ -214,6 +215,7 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    ed25519 (1.2.4)
     equalizer (0.0.11)
     erubi (1.9.0)
     execjs (2.7.0)
@@ -607,6 +609,7 @@ DEPENDENCIES
   aws-sdk-s3
   azure-storage-blob
   barnes
+  bcrypt_pbkdf (>= 1.0, < 2.0)
   bootsnap
   brakeman
   browser
@@ -629,6 +632,7 @@ DEPENDENCIES
   devise
   devise_token_auth
   dotenv-rails
+  ed25519 (>= 1.2, < 2.0)
   facebook-messenger (= 1.5.0)
   factory_bot_rails
   faker

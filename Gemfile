@@ -154,5 +154,8 @@ group :development, :test do
   gem 'capistrano-linked-files'
   gem 'capistrano-sidekiq'
 
-  
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+  gem 'ed25519', '>= 1.2', '< 2.0'
+
+
 end

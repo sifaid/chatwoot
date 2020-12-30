@@ -30,7 +30,7 @@ set :puma_error_log,  "#{release_path}/log/puma.access.log"
 set :delayed_job_args, "-n 1"
 
 # http://stackoverflow.com/questions/21036175/how-to-deploy-a-specific-revision-with-capistrano-3
-set :branch, ENV["REVISION"] || ENV["BRANCH_NAME"] || "master"
+set :branch, ENV["REVISION"] || ENV["BRANCH_NAME"] || "develop"
 
 role :app, %w{rails@192.168.202.12}
 role :web, %w{rails@192.168.202.12}
