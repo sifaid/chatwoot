@@ -30,7 +30,7 @@ install_plugin Capistrano::SCM::Git
 require "capistrano/sidekiq"
 # install_plugin Capistrano::Sidekiq  # Default sidekiq tasks
 # Then select your service manager
-install_plugin Capistrano::Sidekiq::Systemd 
+# install_plugin Capistrano::Sidekiq::Systemd 
 # or  
 # install_plugin Capistrano::Sidekiq::Upstart  # tests needed
 # or  
