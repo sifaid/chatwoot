@@ -32,9 +32,9 @@ install_plugin Capistrano::Sidekiq  # Default sidekiq tasks
 # Then select your service manager
 install_plugin Capistrano::Sidekiq::Systemd 
 # or  
-install_plugin Capistrano::Sidekiq::Upstart  # tests needed
+# install_plugin Capistrano::Sidekiq::Upstart  # tests needed
 # or  
-install_plugin Capistrano::Sidekiq::Monit  # tests needed
+# install_plugin Capistrano::Sidekiq::Monit  # tests needed
 
 # Include tasks from other gems included in your Gemfile
 #
