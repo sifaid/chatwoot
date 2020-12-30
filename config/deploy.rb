@@ -11,13 +11,13 @@ set :linked_files,      %w{.env config/master.key config/database.yml}
 set :linked_dirs,       %w{log tmp/cache tmp/sockets tmp/export tmp/pids public/assets public/uploads storage}
 set :keep_releases,     1
 
-SSHKit.config.command_map[:sidekiq] = "bundle exec sidekiq -C config/sidekiq.yml"
 # set :bundle_path, nil
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 # before "deploy:assets:precompile", "deploy:yarn_install"
 namespace :deploy do
 
+  SSHKit.config.command_map[:sidekiq] = "bundle exec sidekiq -C config/sidekiq.yml"
   # desc "Restart application"
   # task :restart do
   #   on roles(:app), in: :sequence, wait: 5 do

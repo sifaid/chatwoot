@@ -16,7 +16,7 @@ set :full_app_name,   "#{fetch(:applicaton)}-#{fetch(:stage)}"
 set :ssh_options,     { forward_agent: true, auth_methods: %w(publickey) }
 set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :server_name,     "chat.sifa.id"
-set :puma_bind,       ["tcp://0.0.0.0:8005", "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"]
+set :puma_bind,       ["http://127.0.0.1:8005", "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"]
 # set :puma_bind,       ["unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"]
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
