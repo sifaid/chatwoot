@@ -139,4 +139,20 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'webmock'
+
+
+  gem 'capistrano',               require: false
+  gem 'capistrano-rvm',           require: false
+  gem 'capistrano-rails',         require: false
+  gem 'capistrano-rake',          require: false
+  gem 'capistrano-bundler',       require: false
+  gem 'capistrano3-puma',         require: false
+  gem 'capistrano-rails-console', require: false
+  gem 'capistrano-rails-db'
+  # gem 'capistrano3-delayed-job', '~> 1.0'
+  gem 'capistrano-yarn'
+  gem 'capistrano-linked-files'
+  gem 'capistrano-sidekiq'
+
+  
 end
