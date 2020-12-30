@@ -13,10 +13,10 @@ test:
 
 staging:
   <<: *default
-  database: sifa_staging
+  database: sifa_chat_staging
   username: rails
   password: <%= ENV['SIFA_STAGING_DATABASE_PASSWORD'] %>
-  
+
 production:
   <<: *default
   database: <%= ENV.fetch('POSTGRES_DATABASE', 'sifa_chat_production') %>
