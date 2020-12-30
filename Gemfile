@@ -82,7 +82,7 @@ gem 'slack-ruby-client'
 # static analysis
 gem 'brakeman'
 gem 'scout_apm'
-gem 'sentry-raven'
+# gem 'sentry-raven'
 
 ##-- background job processing --##
 gem 'sidekiq'
