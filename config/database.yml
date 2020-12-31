@@ -19,6 +19,6 @@ staging:
 
 production:
   <<: *default
-  database: <%= ENV.fetch('POSTGRES_DATABASE', 'sifa_chat_production') %>
-  username: <%= ENV.fetch('POSTGRES_USERNAME', 'sifa_chat_prod') %>
-  password: <%= ENV.fetch('POSTGRES_PASSWORD', 'sifa_chat_prod') %>
+  database: sifa_chat_staging
+  username: rails
+  password: <%= ENV['SIFA_STAGING_DATABASE_PASSWORD'] %>

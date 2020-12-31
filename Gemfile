@@ -10,6 +10,7 @@ gem 'bootsnap', require: false
 
 ##-- rails application helper gems --##
 gem 'acts-as-taggable-on'
+gem 'awesome_print'
 gem 'attr_extras'
 gem 'browser'
 gem 'hashie'
@@ -81,7 +82,7 @@ gem 'slack-ruby-client'
 # static analysis
 gem 'brakeman'
 gem 'scout_apm'
-gem 'sentry-raven'
+# gem 'sentry-raven'
 
 ##-- background job processing --##
 gem 'sidekiq'
@@ -138,4 +139,23 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'webmock'
+
+
+  gem 'capistrano',               require: false
+  gem 'capistrano-rvm',           require: false
+  gem 'capistrano-rails',         require: false
+  gem 'capistrano-rake',          require: false
+  gem 'capistrano-bundler',       require: false
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+  gem 'capistrano-rails-console', require: false
+  gem 'capistrano-rails-db'
+  # gem 'capistrano3-delayed-job', '~> 1.0'
+  gem 'capistrano-yarn'
+  gem 'capistrano-linked-files'
+  gem 'capistrano-sidekiq'
+
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+  gem 'ed25519', '>= 1.2', '< 2.0'
+
+
 end

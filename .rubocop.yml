@@ -11,6 +11,8 @@ Metrics/ClassLength:
   Max: 125
   Exclude:
     - 'app/models/conversation.rb'
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 RSpec/ExampleLength:
   Max: 25
 Style/Documentation:
@@ -21,15 +23,32 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Style/SymbolArray:
   Enabled: false
+Layout/EmptyLines:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+Layout/LineLength:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+    - 'config/environments/*'
+Rails/Output:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Style/OptionalBooleanParameter:
   Exclude: 
     - 'app/services/email_templates/db_resolver_service.rb'
     - 'app/dispatchers/dispatcher.rb'
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Style/GlobalVars:
   Exclude:
     - 'config/initializers/redis.rb'
     - 'lib/redis/alfred.rb'
     - 'lib/global_config.rb'
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Style/ClassVars:
   Exclude:
     - 'app/services/email_templates/db_resolver_service.rb'
@@ -42,6 +61,30 @@ Metrics/BlockLength:
     - '**/routes.rb'
     - 'config/environments/*'
     - db/schema.rb
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+Style/RegexpLiteral:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+    - 'config/environments/*'
+Style/StringLiterals:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+    - 'config/environments/*'
+Style/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+Style/PercentLiteralDelimiters:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
+Layout/SpaceAfterComma:
+  Exclude:
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Rails/ApplicationController:
   Exclude:
     - 'app/controllers/api/v1/widget/messages_controller.rb'
@@ -60,15 +103,21 @@ RSpec/MessageSpies:
 Metrics/MethodLength:
   Exclude:
     - 'db/migrate/20161123131628_devise_token_auth_create_users.rb'
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Rails/CreateTableWithTimestamps:
   Exclude:
     - 'db/migrate/20170207092002_acts_as_taggable_on_migration.acts_as_taggable_on_engine.rb'
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Style/GuardClause:
   Exclude:
     - 'app/builders/account_builder.rb'
     - 'app/models/attachment.rb'
     - 'app/models/message.rb'
     - 'db/migrate/20190819005836_add_missing_indexes_on_taggings.acts_as_taggable_on_engine.rb'
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
 Metrics/AbcSize:
   Exclude: 
     - 'app/controllers/concerns/auth_helper.rb'
@@ -125,3 +174,5 @@ AllCops:
     - 'storage/**/*'
     - 'db/migrate/20200225162150_init_schema.rb'
     - 'config/initializers/azure_storage_service_patch.rb'
+    - 'config/deploy/*'
+    - 'config/deploy.rb'
